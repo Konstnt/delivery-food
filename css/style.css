@@ -434,13 +434,16 @@ body {
   max-width: 960px;
  }
  .promo {
-
    background-position: center right -50;
    background-size: 600px;
  }
  .rating {
    margin-right: 16px;
  }
+ .card-image {
+  width: 100%;
+  height: auto;
+}
  .category, .price {
   font-size: 14px;
 }
@@ -462,6 +465,7 @@ body {
   .card {
     flex-basis: 49%;
   }
+  
   .card-description {
     font-size: 12px;
   }
@@ -550,6 +554,7 @@ body {
   }
   .card-image {
     width: 100%;
+    height: auto;
   }
   .footer {
     padding: 30px 0;
