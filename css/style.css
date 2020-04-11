@@ -434,13 +434,16 @@ body {
   max-width: 960px;
  }
  .promo {
-
    background-position: center right -50;
    background-size: 600px;
  }
  .rating {
    margin-right: 16px;
  }
+ .card-image {
+  width: 100%;
+  height: auto;
+}
  .category, .price {
   font-size: 14px;
 }
@@ -462,6 +465,7 @@ body {
   .card {
     flex-basis: 49%;
   }
+  
   .card-description {
     font-size: 12px;
   }
@@ -469,6 +473,29 @@ body {
     font-size: 16px;
   }
 }
+
+@media only screen and (max-width : 768px) {
+  .animated {
+  /*CSS transitions*/
+  -o-transition-property: none !important;
+  -moz-transition-property: none !important;
+  -ms-transition-property: none !important;
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+  /*CSS transforms*/
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  /*CSS animations*/
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  }
+  }
 @media(max-width:768px) {
   .container {
     max-width: 560px;
@@ -527,6 +554,7 @@ body {
   }
   .card-image {
     width: 100%;
+    height: auto;
   }
   .footer {
     padding: 30px 0;
